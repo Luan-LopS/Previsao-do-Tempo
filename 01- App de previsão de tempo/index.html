@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="style.css">
     <title>Previsão do tempo</title>
 </head>
+
 <body>
-    <div>
-        <input type="text" placeholder="Digite o nome da cidade">
-        <button>Buscar</button>
-        <h2>Tempo em São Paulo</h2>
+    <div class="conteiner">
+        <h1 class="whichCity">Qual a Cidade que dejesa ver a previsão do tempo</h1>
+        <input class="input-city" type="text" placeholder="Digite o nome da cidade">
+        <button class="button-search" onclick="city()">
+            <img class="img-search" src="https://www.svgrepo.com/show/488200/find.svg" alt="busca">
+        </button>
+        <div class="content">
+            <h2 class="city"></h2>
+            <p class="temperature"></p>
+            <div class="predictive-time">
+                <img class="img-predictive"  alt="">
+                <p class="predictive"></p>
+            </div>
+            <p class="moisture"></p>
+        </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
